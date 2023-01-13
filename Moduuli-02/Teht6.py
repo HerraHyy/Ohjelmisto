@@ -19,4 +19,6 @@ random_number5 = random.randrange(1, 7)
 random_number6 = random.randrange(1, 7)
 random_number7 = random.randrange(1, 7)
 koodi = f"{random_number4}{random_number5}{random_number6}{random_number7}"
+print(f"4-numeroinen lukon koodi: {koodi}")
+
 
