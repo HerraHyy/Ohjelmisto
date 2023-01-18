@@ -4,7 +4,7 @@ Moduuli-02, tehtävä 3
 Kirjoita ohjelma, joka kysyy suorakulmion kannan ja korkeuden. Ohjelma tulostaa suorakulmion piirin ja pinta-alan.
 Suorakulmion piiri tarkoittaa sen neljän sivun yhteispituutta.
 """
-import math
+
 height = int(input("Anna suorakulmion kanta (m): "))
 width = int(input ("Anna suorakulmion korkeus (m): "))
 area = height * width
