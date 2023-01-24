@@ -8,3 +8,11 @@ Kirjoita while-toistorakennetta käyttävä ohjelma, joka tulostaa kolmella jaol
 # luku = range (1, 1000)
 # while int(luku%3 == 0):
 #     print(luku)
+
+alku = 1
+loppu = 1000
+div = 3
+while (alku<=loppu):
+    alku+=1
+    if alku%div == 0:
+        print(alku)
