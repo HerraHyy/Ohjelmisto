@@ -11,5 +11,4 @@ while lukuStr != "":
     if luku > suurin:
         suurin = luku
     lukuStr = input("Anna luku. Tyhjä lopettaa: ")
-print(pienin)
-print(suurin)
+print(f"Annetuista luvuista luku {pienin } oli pienin {suurin} oli suurin.")
