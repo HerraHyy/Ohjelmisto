@@ -13,5 +13,25 @@ toteuttaa piin likiarvon laskennan edellä kuvatulla menetelmällä. Lopuksi ohj
 toteuttaako piste epäyhtälön x^2+y^2<1.)
 """
 
-N = input("Anna arvottavien pisteiden määrä: ")
 
+# nimit = 1
+# n = 0
+#
+# for i in range(1000000):
+#    if i % 2 == 0:
+#       n += 4/nimit
+#    else:
+#        n -= 4/nimit
+#    nimit += 2
+# print(n)
+
+import random
+N = 1000000
+n = 0
+for i in range(N):
+    x = random.random()
+    y = random.random()
+    z = (x ** 2 + y ** 2)
+    if z < 1:
+        n += 1
+print(4 * n / N)
