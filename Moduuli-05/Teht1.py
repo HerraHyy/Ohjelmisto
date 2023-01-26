@@ -3,6 +3,6 @@ Kirjoita ohjelma, joka kysyy käyttäjältä arpakuutioiden lukumäärän. Ohjel
 tulostaa silmälukujen summan. Käytä for-toistorakennetta.
 """
 import random
-n = int(input("Anna arpakuutioiden lukumäärä 1-10: "))
-h = random.randint(1, 6)
-for n in
+dice = input(int("Anna arpakuutioiden lukumäärä: "))
+for i in range(dice):
+    
