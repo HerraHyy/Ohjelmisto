@@ -1,7 +1,16 @@
+"""
+Kirjoita parametriton funktio, joka palauttaa paluuarvonaan satunnaisen nopan silmäluvun väliltä 1..6.
+Kirjoita pääohjelma, joka heittää noppaa niin kauan kunnes tulee kuutonen. Pääohjelma tulostaa kunkin heiton
+jälkeen saadun silmäluvun.
+"""
 import random
-def die_roll():
-    return random.randint(1, 6)
-res = 0
-while die_roll() != 6:
-    res = die_roll()
-    print(res)
+
+def dice_roll():
+    while True:
+        print("Heitetään noppaa...")
+        number = random.randint(1, 6)
+        print(f"Tulokseksi saatiin {number}.")
+        if number == 6:
+            break
+
+dice_roll()
