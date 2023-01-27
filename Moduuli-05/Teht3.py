@@ -8,15 +8,20 @@ Toisaalta esimerkiksi luku 21 ei ole alkuluku, koska se voidaan jakaa tasan myö
 num = int(input("Anna kokonaisluku: "))
 def is_prime(k):
     if k == 1:
-        return False
+       return print(f"{k} ei ole alkuluku.")
+      #  return False
     if k == 2 or k == 3:
-        return True
+       return print(f"{k} on alkuluku.")
+      #  return True
     if k % 2 == 0:
-        return False
+        return print(f"{k} ei ole alkuluku.")
+      #  return False
     for i in range(3, int(k ** 0.5) + 1, 2):
         if k % i == 0:
-            return False
-    return True
+            return print(f"{k} ei ole alkuluku.")
+           # return False
+    return print(f"{k} on alkuluku.")
+    # return True
 print(is_prime(num))
 
 
