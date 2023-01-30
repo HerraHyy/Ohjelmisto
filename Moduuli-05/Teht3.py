@@ -23,9 +23,3 @@ def is_prime(k):
     return print(f"{k} on alkuluku.")
     # return True
 print(is_prime(num))
-
-
-
-
-
-
