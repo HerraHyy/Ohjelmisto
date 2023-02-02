@@ -10,18 +10,18 @@ Löydät koodeja helposti selaimen avulla.)
 def add_airport():
     airport_name = input("Anna lentoaseman nimi: ")
     airport_icao = input("Anna lentoaseman ICAO-koodi: ")
-    airports[airport_name] = airport_icao
+    airports[airport_icao] = airport_name
     print("Lisätty!")
     return
                 # Lisää peruuta tai palaa vaihtoehto
 
 def search_airport():
-    airport_search = input("Anna lentoaseman ICAO-koodi: ")
-    if airport_search in airports:
-        print(f"{airport_search} on {airports[airport_search]}")
-    return
+    airport_icao = input("Anna lentoaseman ICAO-koodi: ")
+    if airport_icao in airports:
+        print(f"{airports[airport_icao]}")
+        return
 
-airports = {"Helsinki-Vantaan Lentoasema": "EFHK"}
+airports = {"EFHK":"Helsinki-Vantaan Lentoasema"}
 choice = -1
 
 while choice != 3:
